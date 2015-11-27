@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bestelformulier</title>
+    <link rel="stylesheet" media="screen and (min-width: 960px)" href="css/all-resolutions.css" />
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 480px) and (max-width: 960px)" href="css/responsive.css" />
+    <link rel="stylesheet" media="print" href="css/print.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <header>
+        <div id="ghost-top"></div>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="nieuws.html">Nieuws</a></li>
+                <li>
+                    <a id="informatie" href="">Informatie</a>
+                    <ul id="info">
+                        <li><a href="basis.html">Wat?</a></li>
+                        <li><a href="spelinhoud.html">Spelinhoud</a></li>
+                        <li><a href="uitbreidingen.html">Uitbreidingen</a></li>
+                    </ul>
+                </li>
+                <li class="nav-active"><a href="bestellen.html">Bestellen</a></li>
+            </ul>
+        </nav>
+        <h1>Bestelformulier</h1>
+    </header>
+
+    <main>
+        <div>
+            <p>Bedankt voor uw interesse! Hieronder kunt u uw bestelling doorgeven. Voor 22 uur besteld: morgen in huis!</p>
+            <br />  
+            <form id="bestelform" action="bestellen.php" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            <label class="labelsgegevens" for="cboaanspreking">Aanspreking: </label>
+                            <select class="inputelements" id="cboaanspreking" name="cboaanspreking" required> 
+                                <option>Mevrouw</option>
+                                <option>De Heer</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="labelsgegevens" for="txtnaam">Naam: </label>
+                            <input class="inputelements" id="txtnaam" name="txtnaam" type="text" required />
+                        </td>
+
+                        <td>
+                            <label class="labelsgegevens" for="txtvoornaam">Voornaam:</label>
+                            <input class="inputelements" id="txtvoornaam" name="txtvoornaam" type="text" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="labelsgegevens" for="txtemail">E-mail:</label>
+                            <input class="inputelements" id="txtemail" name="txtemail" type="text" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="labelsgegevens" for="txtstraat">Straat:</label>
+                            <input class="inputelements" id="txtstraat" name="txtstraat" type="text" required />
+                        </td>
+
+                        <td>
+                            <label class="labelsgegevens" for="txthuisnummer">Huisnummer:</label>
+                            <input class="inputelements" id="txthuisnummer" name="txthuisnummer" type="text" required />
+
+                            <label class="labelsgegevens" for="txtbus" id="lblbus">Bus:</label>
+                            <input id="txtbus" class="inputelements" name="txtbus" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="labelsgegevens" for="txtpostcode">Postcode:</label>
+                            <input class="inputelements" id="txtpostcode" name="txtpostcode" type="text" required />
+                        </td>
+                        <td>
+                            <label class="labelsgegevens" for="txtgemeente">Gemeente:</label>
+                            <input class="inputelements" id="txtgemeente" name="txtgemeente" type="text" required />
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><hr /></td></tr>
+                    <tr>
+                        <td>
+                            <input id="basisspel" name="bestelling[]" value="0" type="checkbox" />
+                            <label class="labelsbestelling" for="basisspel">Basisspel</label>
+
+                        </td>
+                        <td>
+                            <input id="basisspelexp" name="bestelling[]" value="1" type="checkbox" />
+                            <label class="labelsbestelling" for="basisspelexp">Uitbreiding: basisspel met 5 &amp; 6 spelers</label>
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><hr /></td></tr> 
+                    <tr>
+                        <td>
+                            <input id="zeevaarders" name="bestelling[]" value="2" type="checkbox" />
+                            <label class="labelsbestelling" for="zeevaarders">Uitbreiding: Zeevaarders</label>
+
+                        </td>
+                        <td>
+                            <input id="zeevaardersexp" name="bestelling[]" value="3" type="checkbox" />
+                            <label class="labelsbestelling" for="zeevaardersexp">Uitbreiding: Zeevaarders met 5 &amp; 6 spelers</label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="steden" name="bestelling[]" value="4" type="checkbox" />
+                            <label class="labelsbestelling" for="steden">Uitbreiding: Steden en Ridders</label>
+
+                        </td>
+                        <td>
+                            <input id="stedenexp" name="bestelling[]" value="5" type="checkbox" />
+                            <label class="labelsbestelling" for="stedenexp">Uitbreiding: Steden en Ridders met 5 &amp; 6 spelers</label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="kooplieden" name="bestelling[]" value="6" type="checkbox" />
+                            <label class="labelsbestelling" for="kooplieden">Uitbreiding: Kooplieden en Barbaren</label>
+
+                        </td>
+                        <td>
+                            <input id="koopliedenexp" name="bestelling[]" value="7" type="checkbox" />
+                            <label class="labelsbestelling" for="koopliedenexp">Uitbreiding: Kooplieden en Barbaren met 5 &amp; 6 spelers</label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="piraten" name="bestelling[]" value="8" type="checkbox" />
+                            <label class="labelsbestelling" for="piraten">Uitbreiding: Piraten en Ontdekkers</label>
+
+                        </td>
+                        <td>
+                            <input id="piratenexp" name="bestelling[]" value="9" type="checkbox" />
+                            <label class="labelsbestelling" for="piratenexp">Uitbreiding: Piraten en Ontdekkers met 5 &amp; 6 spelers</label>
+
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><hr /></td></tr>
+                    <tr>
+                        <td>
+                            <input id="specialisten" name="bestelling[]" value="10" type="checkbox" />
+                            <label class="labelsbestelling" for="specialisten">Uitbreiding: De Specialisten van Catan</label>
+
+                        </td>
+                        <td>
+                            <input id="kolonien" name="bestelling[]" value="11" type="checkbox" />
+                            <label class="labelsbestelling" for="kolonien">Uitbreiding: De Koloni&euml;n van Catan</label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="woestijnruiters" name="bestelling[]" value="12" type="checkbox" />
+                            <label class="labelsbestelling" for="woestijnruiters">Uitbreiding: De Woestijnruiters van Catan</label>
+
+                        </td>
+                        <td>
+                            <input id="kanaal" name="bestelling[]" value="13" type="checkbox" />
+                            <label class="labelsbestelling" for="kanaal">Uitbreiding: Het Grote Kanaal van Catan</label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="wereldwonderen" name="bestelling[]" value="14" type="checkbox" />
+                            <label class="labelsbestelling" for="wereldwonderen">Uitbreiding: De Wereldwonderen van Catan</label>
+
+                        </td>
+                        <td>
+                            <input id="diamanten" name="bestelling[]" value="15" type="checkbox" />
+                            <label class="labelsbestelling" for="diamanten">Uitbreiding: Diamanten voor Catan</label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="vissers" name="bestelling[]" value="16" type="checkbox" />
+                            <label class="labelsbestelling" for="vissers">Uitbreiding: de Vissers van Catan</label>
+
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><hr /></td></tr>
+                    <tr>
+                        <td>
+                            <input id="cheops" name="bestelling[]" value="17" type="checkbox" />
+                            <label class="labelsbestelling" for="cheops">Historische Scenario's:  Cheops &amp; Alexander de Grote</label>
+
+                        </td>
+                        <td>
+                            <input id="muur" name="bestelling[]" value="18" type="checkbox" />
+                            <label class="labelsbestelling" for="muur">Historische Scenario's: Troje &amp; de Grote Muur</label>
+
+                        </td>
+                    </tr>
+
+                </table>
+                <input id="btnsubmit" name="btnsubmit" type="submit" value="Bestellen" class="button" />
+                <input id="btnreset"  type="reset" class="button" value="Wis formulier" />
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div id="copyright">
+            <p>
+                Copyright &#169; 2014 - 999Games <br />
+                Ontwerp door Ziggy Maes
+            </p>
+        </div>
+        <div id="social">
+            <p>Volg ons op:</p>
+            <ul>
+                <li><a href="https://www.facebook.com/pages/Kolonisten-van-Catannl/165010633585224" target="_blank"><img src="images/social/facebook.png" /></a></li>
+                <li><a href="https://twitter.com/kolonistennl" target="_blank"><img src="images/social/twitter.png" /></a></li>
+            </ul>
+            <ul>
+                <li><a href="http://www.linkedin.com/pub/ziggy-maes/38/365/542" target="_blank"><img src="images/social/linkedin.png" /></a></li>
+                <li><a href="https://www.google.com/+ZiggyMaes" target="_blank"><img src="images/social/googlep.png" /></a></li>
+            </ul>
+        </div>
+        <div id="references">
+            <p>Handige websites:</p>
+            <ul>
+                <li><a href="http://nl.wikipedia.org/wiki/Kolonisten_van_Catan" target="_blank">Wikipedia artikel over de Kolonisten</a></li>
+                <li><a href="http://www.999games.nl/pages/spel-families/de-kolonisten-van-catan.php" target="_blank">Website 999 Games</a></li>
+                <li><a href="http://www.playcatan.com/en/" target="_blank">Speel De Kolonisten online!</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

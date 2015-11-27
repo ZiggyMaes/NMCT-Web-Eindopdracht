@@ -1,0 +1,640 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+*
+{
+    font-family: "Open Sans";
+    color: #41596B;
+    margin-top: 0em; 
+}
+
+body
+{
+    background-image: url("../images/background_gradient.png");
+    background-repeat: repeat-x;
+    min-width: 42.500em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60em;
+}
+
+h1
+{
+    font-size: 4.250em;
+    letter-spacing: -0.06em;
+    text-align: center;
+    line-height: 0.5em;
+    color: #ebb753;
+    margin: 0em;
+    margin-top: 0.5em;
+    margin-bottom: .7em;
+}
+
+
+header h2
+{
+    text-align: center;
+    
+    margin: 0.75em;
+}
+
+h2
+{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h3
+{
+    font-size: 1.75em;
+    margin-bottom: 0.5em;
+}
+
+h4
+{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+p, td, li
+{
+    font-size: 0.875em;
+    line-height: 1.5em;
+    padding-bottom:0em;
+}
+
+#ghost-top
+{
+    border-top: 0.250em solid #FFF;
+}
+
+header
+{
+    margin: 0em;
+}
+
+header img
+{
+    width: 20em;
+    height: 5em;
+    border: .250em solid #FFF;
+    border-top: none;
+}
+
+#main-nav
+{
+    float: right;
+
+}
+
+#main-nav ul
+{
+    margin: 0em;
+    padding-left: 0em;
+}
+#main-nav ul li
+{
+    display: inline-block;
+    padding: 0.750em;
+    text-transform: uppercase;
+}
+
+.nav-active
+{
+    background-image: url("../images/nav-active.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: #00539F;
+}
+
+nav a
+{
+    text-decoration: none;
+}
+
+a:hover, .nav-active
+{
+    color: #00539F;
+    text-decoration: underline;
+}
+
+a:hover
+{
+    font-weight: bold;
+}
+
+#news-slide
+{
+	overflow: hidden;
+	position: relative;
+    height: 16.875em;
+    padding-bottom: 2em;
+}
+        	
+.sliderItem
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+	display: none;
+	opacity: 0;
+}
+
+.info-title
+{ 
+   position: relative; 
+   color: white; 
+   letter-spacing: -0.063em;
+   background: rgba(0, 0, 0, 0.7);
+   padding-top: 0.625em;
+   padding-bottom: 0.7em;
+   width: 100%;
+   display: inline-block;
+   text-align: center;
+}
+
+article
+{
+    overflow: auto;
+}
+
+article li
+{
+    margin-left: 1em;
+    list-style-position: inside;
+}
+
+article h3 img
+{
+    margin-right: .5em;
+    height: 0.75em;
+}
+
+.expand, .contract
+{
+    height: 0.75em;
+}
+
+.article-title
+{ 
+   position: relative; 
+   color: white; 
+   letter-spacing: -0.063em;
+   background: rgba(0, 0, 0, 0.7);
+   padding-top: 0.3em;
+   padding-bottom: 0.3em;
+   width: 100%;
+   display: inline-block;
+   text-align: center;
+}
+
+.news-slide-image
+{
+    max-width: 61.250em;
+    max-height: 16.875em;
+    text-align: center;
+}
+
+#landing
+{
+    height: 80em;
+    padding-bottom: 1em;
+}
+
+#uitbreiding-info
+{
+    height: 25em;
+    padding-bottom: 1em;
+}
+
+#basis
+{
+    float: left;
+    width: 29.688em;    
+    height: 29.688em;
+    text-align: center;
+
+    background-image: url("../images/basis.png");
+    background-size: cover;
+}
+
+#spelinhoud
+{
+    float: left;
+    width: 29.688em;
+    height: 29.688em;
+    margin-left: 0.625em;
+    text-align: center;
+
+    background-image: url("../images/inhoud.jpg");
+    background-size: cover;
+
+}
+
+#uitbreidingen 
+{
+    float: left;
+    width: 29.688em;
+    height: 29.688em;
+    text-align: center;
+    margin-top: 0.625em;
+
+    background-image: url("../images/uitbreidingen.jpg");
+    background-size: cover;
+}
+
+
+#webshop
+{
+    float: left;
+    width: 29.688em;
+    height: 29.688em;
+    margin-left: 0.625em;   
+    text-align: center;
+    margin-top: 0.625em;
+
+    background-image: url("../images/webshop.jpg");
+    background-size: cover;
+}
+
+#basis:hover, #spelinhoud:hover, #uitbreidingen:hover, #webshop:hover
+{
+    background: rgba(0, 0, 0, 0.7);
+    transition: 2s;
+}
+
+.info-text
+{
+    color: white;
+    margin: 1em;
+}
+
+#landing-nav div h3 span
+{
+    transition: 1s;
+}
+
+#landing-nav div:hover h3 span
+{
+    bottom: 0em;
+    transition: 1s;
+}
+
+#landing-nav div p, #landing-nav div ul ,#landing-nav .button
+{
+    visibility: hidden;
+}
+
+#landing-nav div ul li
+{
+    margin: 0em;
+    text-align: left;
+    margin-left: 11em;
+}
+
+#landing-nav div:hover p, #landing-nav div:hover ul, #landing-nav div:hover .button
+{
+    visibility: visible;
+    animation: fadein 2s;
+}
+
+#news-info-title
+{
+    bottom: 3.1em;
+}
+
+#info-title-basis, #info-title-spelinhoud, #info-title-uitbreidingen, #info-title-webshop
+{
+    bottom: -14.3em;
+}
+
+footer
+{
+    margin-top: 1em;
+    padding-top: 1em;
+    height: 10.000em;
+    background-color: #1C1C1C;
+    border-style: solid;
+    border-width: 0.01em;
+    border-radius: .5em;
+}
+
+footer p, footer a, .sliderItem a
+{
+    color: white;
+}
+
+#copyright
+{
+    width: 19.125em;
+    height: inherit;
+    float: left;
+}
+
+#copyright p
+{
+    padding-top: 4em;
+    margin-left: 1em;
+}
+#social, #references
+{
+    width: 19.125em;
+    height: inherit;
+    margin-left: 1.250em;
+    float: left;
+    margin-left: 2em;
+}
+
+#social
+{
+    margin-left: 0em;
+}
+
+ul
+{
+    margin: 0em;
+    padding-left: 0em;
+}
+
+#social
+{
+    text-align: center;
+}
+#social ul li
+{
+    display: inline-block;
+}
+
+#references ul
+{
+    padding-left: 1em;
+}
+
+#social img
+{
+    width: 2.500em;
+}
+
+.button, .button *, .button:hover *, .button:active *, .button:visited *
+{
+	display: inline-block;
+	border-radius: .25em;
+	background-image: linear-gradient(to bottom,#43a6e2,#277ac1);
+	color: white;
+	text-align: center;
+	font-weight:bold;
+	padding:0.313em 0.625em;
+	min-width:5em;
+    text-decoration: none;
+}
+
+.figure-left
+{
+    border-style: solid;
+    border-width: 0.1em;
+    margin-left: 0;
+    margin-right: 1em;
+    width: 14.063em;
+    float: left;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: .5em;
+}
+.figure-left img
+{
+    width: 14.063em;
+    border-radius: 0.5em;
+}
+
+
+.figure-uitbreiding
+{
+    border-style: solid;
+    border-width: 0.1em;
+    margin-left: 0;
+    margin-right: 1em;
+    float: left;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    width: 18.5em;
+    height: 20em;
+    text-align: center;
+}
+
+.figure-uitbreiding img
+{
+    border-radius: 0.5em;
+    height: 16em;
+}
+.figure-uitbreiding-info
+{
+    border-style: solid;
+    border-width: 0.1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5em;
+    padding: 0em;
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+    height: 20em;
+    width: 60.000em;
+    text-align: center;
+}
+
+.figure-uitbreiding-info img
+{
+    border-radius: 0.5em;
+    height: 15em;
+}
+
+.figure-news
+{
+    border-style: solid;
+    border-width: 0.1em;
+    margin-left: 0;
+    margin-right: 1em;
+    width: 8em;
+    float: left;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+.figure-news img
+{
+    width: 8em;
+    height: 8em;
+    border-radius: 0.5em;
+}
+
+
+.figure-stretch
+{
+    border-style: solid;
+    border-width: 0.1em;
+    margin-left: 0;
+    margin-right: 1em;
+    width: 58.85em;
+    float: left;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+.figure-stretch img
+{
+    width: 100%;
+    border-radius: 0.5em;
+}
+
+figure figcaption
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+#bestelform table td
+{
+    padding: 0.1em 0.1em;
+}
+
+#bestelform .button
+{
+    margin-top: 1em;
+    width: 30%;
+}
+
+.labelsgegevens
+{
+    width: 6.250em;
+    display: inline-block;
+}
+
+.labelsbestelling
+{
+    width: 26.125em;
+    display: inline-block;
+}
+
+#lblbus
+{
+    width: 1.7em;
+    display: inline-block;
+}
+
+.inputelements
+{
+    margin-left: .5em;
+    margin-right: 1em;
+}
+
+.inputlabels-left
+{
+    padding-left: 1.5em;
+}
+
+
+#txthuisnummer, #txtbus
+{
+    width: 4.2em;
+}
+
+#uitbreidingen-main div
+{
+    float: left;
+    width: 20em;
+    margin-bottom: 1em;
+}
+
+#forum .article-title
+{
+    margin-top: .5em
+}
+
+.sub-forum
+{
+    width: 59.875em;
+    border-radius: .5em;
+    border-style: solid;
+    border-width: 0.1em;
+    margin-bottom: .5em;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.sub-forum h3
+{
+    margin-bottom: 0em;
+    padding-left: 1em;
+}
+
+.sub-forum p
+{
+    padding-left: 2em;
+}
+
+.sub-forum-stats
+{
+    display: inline-block;
+    float: right;
+    margin-top: 0.2em;
+    width: 15em;
+}
+
+.sub-forum-stats p 
+{
+    margin-bottom: 0em;
+    margin-top: 0em;
+    margin-right: .5em;
+    padding: 0;
+}
+
+#info {
+    display:none;
+}
+
+#informatie:hover ul {
+    display:block;
+}
+
+#info
+{ 
+	position: absolute;  
+	display: none;
+    background-color: #41596B;
+    z-index:  1;
+} 
+
+#main-nav ul li:hover ul 
+{ 
+	display: block; 
+} 
+
+#info li
+{ 
+	display: block !important; 
+    clear: both;
+    text-align: center;
+}
+
+#info li a
+{
+    color: white;
+}
+
+.nav-inpage ul li
+{
+    text-decoration: underline;
+}
+
+.video
+{
+    margin-top: 5em;
+    margin-bottom: 5em;
+    width: 60em;
+    height: 33.750em;
+}
+@keyframes fadein 
+{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

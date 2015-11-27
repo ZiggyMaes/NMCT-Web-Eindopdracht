@@ -1,0 +1,541 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+*
+{
+    font-family: "Open Sans";
+    color: #41596B;
+    margin-top: 0em;
+}
+
+body
+{
+    background-image: url("../images/background_gradient.png");
+    background-repeat: repeat-x;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1
+{
+    font-size: 2.50em;
+    letter-spacing: -0.06em;
+    text-align: center;
+    line-height: 1em;
+    color: #ebb753;
+    margin: 0em;
+    margin-top: 0.5em;
+    margin-bottom: .7em;
+    display: block;
+    clear: both;
+}
+
+
+header h2
+{
+    text-align: center;
+    
+    margin: 0.75em;
+}
+
+h2
+{
+    font-size: 1.75em;
+    margin-bottom: 0.5em;
+}
+
+h3
+{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h4
+{
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+p, td, li
+{
+    font-size: 0.875em;
+    line-height: 1.5em;
+    padding-bottom:0em;
+}
+
+#ghost-top
+{
+    border-top: 0.250em solid #FFF;
+}
+
+header
+{
+    margin: 0em;
+}
+
+header img
+{
+    height: 5em;
+    border: .250em solid #FFF;
+    border-top: none;
+}
+
+#main-nav
+{
+    float: right;
+
+}
+
+#main-nav ul
+{
+    margin: 0em;
+    padding-left: 0em;
+}
+#main-nav ul li
+{
+    display: block;
+    padding: 0.750em;
+    text-transform: uppercase;
+}
+
+.nav-active
+{
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: #00539F;
+}
+
+nav a
+{
+    text-decoration: none;
+}
+
+a:hover, .nav-active
+{
+    color: #00539F;
+    text-decoration: underline;
+}
+
+a:hover
+{
+    font-weight: bold;
+}
+
+#news-slide
+{
+
+    display: none;
+}
+
+.news-slide-image
+{
+    
+    text-align: center;
+}
+        	
+.sliderItem
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+	display: none;
+	opacity: 0;
+}
+
+.info-title
+{ 
+   position: relative; 
+   color: white; 
+   letter-spacing: -0.063em;
+   background: rgba(0, 0, 0, 0.7);
+   padding-top: 0.625em;
+   padding-bottom: 0.7em;
+   display: block;
+   text-align: center;
+}
+
+article
+{
+    overflow: auto;
+}
+
+article li
+{
+    margin-left: 1em;
+    list-style-position: inside;
+}
+
+article h3 img
+{
+    margin-right: .5em;
+    height: 0.75em;
+}
+
+.expand, .contract
+{
+    height: 0.75em;
+}
+
+.article-title
+{ 
+   position: relative; 
+   color: white; 
+   letter-spacing: -0.063em;
+   background: rgba(0, 0, 0, 0.7);
+   padding-top: 0.3em;
+   padding-bottom: 0.3em;
+   display: block;
+   clear: both;
+   text-align: center;
+}
+
+#landing
+{
+    padding-bottom: 1em;
+}
+
+#uitbreiding-info
+{
+    padding-bottom: 1em;
+}
+
+#basis
+{
+    clear: both; 
+    height: 29.688em;
+    text-align: center;
+    margin-top: 0.625em;
+    background-image: url("../images/basis.png");
+    background-size: cover;
+}
+
+#spelinhoud
+{
+    clear: both;
+    height: 29.688em;
+    text-align: center;
+    margin-top: 0.625em;
+    background-image: url("../images/inhoud.jpg");
+    background-size: cover;
+
+}
+
+#uitbreidingen 
+{
+    clear: both;
+    height: 29.688em;
+    text-align: center;
+    margin-top: 0.625em;
+
+    background-image: url("../images/uitbreidingen.jpg");
+    background-size: cover;
+}
+
+
+#webshop
+{
+    clear: both;
+    height: 29.688em; 
+    text-align: center;
+    margin-top: 0.625em;
+
+    background-image: url("../images/webshop.jpg");
+    background-size: cover;
+}
+
+#basis, #spelinhoud, #uitbreidingen, #webshop
+{
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.info-text
+{
+    color: white;
+}
+
+#landing-nav div h3 span
+{
+    transition: 1s;
+}
+
+
+#landing-nav div ul li
+{
+    margin: 0em;
+    text-align: left;
+    margin-left: 11em;
+}
+
+#news-info-title
+{
+    bottom: 3.1em;
+}
+
+footer
+{
+    margin-top: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    height: 18.000em;
+    background-color: #1C1C1C;
+    border-style: solid;
+    border-width: 0.01em;
+    border-radius: .5em;
+}
+
+footer p, footer a, .sliderItem a
+{
+    color: white;
+}
+
+#copyright, #social, #references
+{
+    margin-left: 5%;
+}
+
+ul
+{
+    margin: 0em;
+    padding-left: 0em;
+}
+
+#social ul li
+{
+    display: inline-block;
+}
+
+
+#social img
+{
+    width: 2.500em;
+}
+
+.button, .button *, .button:hover *, .button:active *, .button:visited *
+{
+	display: inline-block;
+	border-radius: .25em;
+	background-image: linear-gradient(to bottom,#43a6e2,#277ac1);
+	color: white;
+	text-align: center;
+	font-weight:bold;
+	padding:0.313em 0.625em;
+	min-width:5em;
+    text-decoration: none;
+}
+
+.figure-left
+{
+    border-style: solid;
+    border-width: 0.1em;
+    margin-left: 0;
+    margin-right: 1em;
+    width: 5em;
+    float: left;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: .5em;
+}
+
+.figure-uitbreiding
+{
+    border-style: solid;
+    border-width: 0.1em;
+    margin-left: 0;
+    margin-right: 1em;
+    float: left;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    width: 10em;
+    height: 10em;
+    text-align: center;
+}
+
+.figure-uitbreiding img
+{
+    border-radius: 0.5em;
+    height: 5em;
+}
+.figure-uitbreiding-info
+{
+    border-style: solid;
+    border-width: 0.1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5em;
+    padding: 0em;
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+    height: 20em;
+    text-align: center;
+}
+
+.figure-uitbreiding-info img
+{
+    border-radius: 0.5em;
+    height: 15em;
+}
+
+.figure-news
+{
+    border-style: solid;
+    border-width: 0.1em;
+    margin-left: 0;
+    margin-right: 1em;
+    width: 5em;
+    float: left;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+.figure-news img
+{
+    width: 5em;
+    height: 5em;
+    border-radius: 0.5em;
+}
+
+
+.figure-stretch
+{
+    border-style: solid;
+    border-width: 0.1em;
+    margin-left: 0;
+    margin-right: 1em;
+    float: left;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+.figure-left img
+{
+    width: 5em;
+    border-radius: 0.5em;
+}
+
+.figure-stretch img
+{
+    width: 100%;
+    border-radius: 0.5em;
+}
+
+figure figcaption
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+#bestelform table td
+{
+    padding: 0.1em 0.1em;
+}
+
+#bestelform .button
+{
+    margin-top: 1em;
+    width: 30%;
+    display: block;
+}
+
+#bestelform table td
+{
+    display: block;
+}
+
+.labelsgegevens
+{
+    display: block;
+}
+
+.labelsbestelling
+{
+    display: inline-block;
+
+    margin-top: .3em;
+    margin-bottom: .3em;
+    vertical-align:middle;
+}
+
+#lblbus
+{
+    display: block;
+}
+
+.inputelements
+{
+    margin-left: .5em;
+    margin-right: 1em;
+}
+
+.inputlabels-left
+{
+    padding-left: 1.5em;
+}
+
+
+#uitbreidingen-main div
+{
+    float: left;
+    width: 20em;
+    margin-bottom: 1em;
+}
+
+#info {
+    display:none;
+}
+
+#informatie:hover ul {
+    display:block;
+}
+
+#info
+{ 
+	position: absolute;  
+	display: none;
+    background-color: #41596B;
+    z-index:  1;
+} 
+
+#main-nav ul li:hover ul 
+{ 
+	display: block; 
+} 
+
+#info li
+{ 
+	display: block !important; 
+    clear: both;
+    text-align: center;
+}
+
+#info li a
+{
+    color: white;
+}
+
+.nav-inpage ul li
+{
+    text-decoration: underline;
+}
+
+.video
+{
+    margin-top: 5em;
+    margin-bottom: 5em;
+
+    width: 80%;
+    height: 100%;
+}
+
+main
+{
+    clear:both;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+@keyframes fadein 
+{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

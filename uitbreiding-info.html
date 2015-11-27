@@ -1,0 +1,85 @@
+﻿<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Basis uitleg - Kolonisten van Catan</title>
+    <link rel="stylesheet" media="screen and (min-width: 960px)" href="css/all-resolutions.css" />
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 480px) and (max-width: 960px)" href="css/responsive.css" />
+    <link rel="stylesheet" media="print" href="css/print.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="uitbreiding-info.js"></script>
+</head>
+<body>
+    <header>
+        <div id="ghost-top"></div>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="nieuws.html">Nieuws</a></li>
+                <li class="nav-active">
+                    <a id="informatie" href="">Informatie</a>
+                    <ul id="info">
+                        <li><a href="basis.html">Wat?</a></li>
+                        <li><a href="spelinhoud.html">Spelinhoud</a></li>
+                        <li><a href="uitbreidingen.html">Uitbreidingen</a></li>
+                    </ul>
+                </li>
+                <li><a href="bestellen.html">Bestellen</a></li>
+            </ul>
+        </nav>
+        <h1>Speluitbreidingen</h1>
+    </header>
+
+    <main id="uitbreiding-info">
+        <nav><a href="uitbreidingen.html">Terug naar overzicht...</a></nav>
+        <figure class="figure-uitbreiding-info">
+            <script>document.write("<img class=\"article-header-image\" src=\"" + illustraties[getParameterByName('uitbreiding')] + "\" />");</script>
+            
+            <figcaption>
+                <script>document.write(titels[getParameterByName('uitbreiding')]);</script>
+                <br />
+                Uitgavejaar: <script>document.write(uitgaveJaren[getParameterByName('uitbreiding')]);</script>
+                <br />
+                <a href="bestellen.html">Bestellen</a>
+            </figcaption>
+            <script>
+                if(videos[getParameterByName('uitbreiding')] != "")
+                {
+                    document.write('<iframe class="video" src="//www.youtube.com/embed/' + videos[getParameterByName("uitbreiding")] + '" frameborder="0" allowfullscreen></iframe>');
+                    var element = document.getElementById('uitbreiding-info');
+                    element.style.height = "65em";
+                }
+            </script>
+        </figure>
+    </main>
+
+    <footer>
+        <div id="copyright">
+            <p>
+                Copyright &#169; 2014 - 999Games <br />
+                Ontwerp door Ziggy Maes
+            </p>
+        </div>
+        <div id="social">
+            <p>Volg ons op:</p>
+            <ul>
+                <li><a href="https://www.facebook.com/pages/Kolonisten-van-Catannl/165010633585224" target="_blank"><img src="images/social/facebook.png" /></a></li>
+                <li><a href="https://twitter.com/kolonistennl" target="_blank"><img src="images/social/twitter.png" /></a></li>
+            </ul>
+            <ul>
+                <li><a href="http://www.linkedin.com/pub/ziggy-maes/38/365/542" target="_blank"><img src="images/social/linkedin.png" /></a></li>
+                <li><a href="https://www.google.com/+ZiggyMaes" target="_blank"><img src="images/social/googlep.png" /></a></li>
+            </ul>
+        </div>
+        <div id="references">
+            <p>Handige websites:</p>
+            <ul>
+                <li><a href="http://nl.wikipedia.org/wiki/Kolonisten_van_Catan" target="_blank">Wikipedia artikel over de Kolonisten</a></li>
+                <li><a href="http://www.999games.nl/pages/spel-families/de-kolonisten-van-catan.php" target="_blank">Website 999 Games</a></li>
+                <li><a href="http://www.playcatan.com/en/" target="_blank">Speel De Kolonisten online!</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
